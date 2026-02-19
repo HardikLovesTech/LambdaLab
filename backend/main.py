@@ -17,7 +17,7 @@ from matplotlib.figure import Figure
 # Import simulation and fitting modules
 import sys
 sys.path.insert(0, '/home/c0d3crusad3r/Project/LambdaLab')
-from backend.Simulation import PoissonProcess, HawkesProcess
+from Simulation import PoissonProcess, HawkesProcess
 
 app = FastAPI(title="LambdaLab API")
 
