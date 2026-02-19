@@ -51,7 +51,7 @@ export function Theory() {
             <h3 style={{ fontSize: "1.125rem", fontWeight: 500, marginTop: "16px", marginBottom: "8px" }}>Parameter Definitions</h3>
             <ul>
               <li><strong><InlineMath math="\\mu" /> (Baseline Intensity)</strong>: At what rate would events occur if there were no self-excitation? If <InlineMath math="\\alpha = 0" />, the process reduces to a Poisson process with rate <InlineMath math="\\mu" />.</li>
-              <li><strong><InlineMath math="\\alpha" /> (Excitation Strength)</strong>: How much does each past event boost the current intensity? Each event at time <InlineMath math="t_i" /> contributes <InlineMath math="\\alpha e^{-\\beta(t - t_i)}" /> to the intensity. Higher <InlineMath math="\\alpha" /> means stronger self-excitation; lower means weaker.</li>
+              <li><strong><InlineMath math="\\alpha" /> (Excitation Strength)</strong>: How much does each past event boost the current intensity? Each event at time <InlineMath math="t_i" /> contributes <InlineMath math="\\alpha * e^{-\\beta(t - t_i)}" /> to the intensity. Higher <InlineMath math="\\alpha" /> means stronger self-excitation; lower means weaker.</li>
               <li><strong><InlineMath math="\\beta" /> (Decay Rate)</strong>: How fast does the excitation from past events fade? This controls system "memory". High <InlineMath math="\\beta" /> means quick forgetting; low <InlineMath math="\\beta" /> means long memory.</li>
             </ul>
           </div>
@@ -121,9 +121,9 @@ export function Theory() {
           <p>Lower AIC is better. The decision rule for <InlineMath math="\Delta\text{AIC} = \text{AIC}_{\text{Poisson}} - \text{AIC}_{\text{Hawkes}}" />:</p>
           <ul>
             <li><InlineMath math="\Delta\text{AIC} < -10" /> = Very strong evidence for Hawkes</li>
-            <li><InlineMath math="-10 \\leq \\Delta\\text{AIC} < -2" /> = Moderate evidence for Hawkes</li>
-            <li><InlineMath math="-2 \\leq \\Delta\\text{AIC} \\leq 2" /> = Weak evidence; comparable models</li>
-            <li><InlineMath math="\\Delta\\text{AIC} > 2" /> = Poisson preferred (no clustering detected)</li>
+            <li><InlineMath math="-10 \leq \Delta\text{AIC} < -2" /> = Moderate evidence for Hawkes</li>
+            <li><InlineMath math="-2 \leq \Delta\text{AIC} \leq 2" /> = Weak evidence; comparable models</li>
+            <li><InlineMath math="\Delta\text{AIC} > 2" /> = Poisson preferred (no clustering detected)</li>
           </ul>
           <p>The penalty for complexity (Hawkes has 3 params vs Poisson's 1) ensures Hawkes must explain the data substantially better to be chosen.</p>
         </section>
