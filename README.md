@@ -77,3 +77,15 @@ $ n = ​α/β < 1 $
 - Model comparison rigor
 - Clean mathematical documentation
 - Financial market microstructure
+
+## References to the notes :
+
+- [Poisson Process](Notes/PoissonProcessExplaination.md) : Explains what exactly is poisso process , inter-arrival distribution , intensity definition , why memoryless property fails for trade data 
+Along with all of these , it also has the explaination to why Poisson assumes independence and why does trade center clusters
+
+
+
+# Author 
+
+Hardik Runwal  
+MIT , Manipal
