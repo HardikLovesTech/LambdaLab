@@ -120,7 +120,7 @@ export function Theory() {
           <MathBlock>{`\\text{AIC} = 2k - 2\\ell_{\\max}`}</MathBlock>
           <p>Lower AIC is better. The decision rule for <InlineMath math="\Delta\text{AIC} = \text{AIC}_{\text{Poisson}} - \text{AIC}_{\text{Hawkes}}" />:</p>
           <ul>
-            <li><InlineMath math="\\Delta\\text{AIC} < -10" /> = Very strong evidence for Hawkes</li>
+            <li><InlineMath math="\Delta\text{AIC} < -10" /> = Very strong evidence for Hawkes</li>
             <li><InlineMath math="-10 \\leq \\Delta\\text{AIC} < -2" /> = Moderate evidence for Hawkes</li>
             <li><InlineMath math="-2 \\leq \\Delta\\text{AIC} \\leq 2" /> = Weak evidence; comparable models</li>
             <li><InlineMath math="\\Delta\\text{AIC} > 2" /> = Poisson preferred (no clustering detected)</li>
