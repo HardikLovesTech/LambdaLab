@@ -17,7 +17,7 @@ export function Demo() {
     setLoading(true);
     setError("");
     try {
-      const response = await fetch("/api/simulate", {
+      const response = await fetch('https://lambdalab.onrender.com/api/simulate', {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ mu, alpha, beta, T }),
