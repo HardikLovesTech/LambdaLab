@@ -1,0 +1,159 @@
+@import './fonts.css';
+@import './theme.css';
+@import "tailwindcss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: var(--font-size);
+}
+
+/* Typography */
+h1 {
+  font-size: 2.25rem;
+  font-weight: 600;
+  margin: 0 0 32px 0;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: 1.875rem;
+  font-weight: 600;
+  margin: 96px 0 24px 0;
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin: 48px 0 16px 0;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0 0 16px 0;
+  color: var(--muted-foreground);
+  line-height: 1.8;
+}
+
+/* Code */
+code {
+  font-family: 'Fira Code', monospace;
+  font-size: 0.875rem;
+  font-weight: 500;
+  background-color: var(--secondary);
+  color: var(--muted-foreground);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+pre {
+  background-color: var(--secondary);
+  border: 1px solid var(--border);
+  padding: 20px;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin: 24px 0;
+}
+
+pre code {
+  background: none;
+  padding: 0;
+  color: var(--muted-foreground);
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+/* Links */
+a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: var(--primary-foreground);
+}
+
+/* KaTeX */
+.katex {
+  color: var(--foreground);
+}
+
+.katex .mord,
+.katex .mop,
+.katex .mrel,
+.katex .mbin {
+  color: var(--foreground);
+}
+
+/* Selection */
+::selection {
+  background-color: rgba(100, 108, 255, 0.3);
+  color: var(--foreground);
+}
+
+/* Lists */
+ul, ol {
+  margin-left: 24px;
+  margin-bottom: 16px;
+}
+
+li {
+  margin-bottom: 8px;
+  color: var(--muted-foreground);
+  line-height: 1.8;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 24px 0;
+}
+
+th, td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+
+th {
+  background-color: var(--secondary);
+  font-weight: 600;
+  color: var(--foreground);
+}
+
+tbody tr:hover {
+  background-color: var(--secondary);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+main > div {
+  animation: fadeIn 0.4s ease-out;
+}
