@@ -17,7 +17,7 @@ export function Footer() {
       }}>
         <div style={{ display: "flex", gap: "32px" }}>
           <a
-            href="https://github.com"
+            href="https://github.com/HardikLovesTech/"
             target="_blank"
             rel="noopener noreferrer"
             style={{ color: "var(--muted-foreground)", textDecoration: "none", transition: "color 0.2s" }}
@@ -37,7 +37,7 @@ export function Footer() {
             arXiv
           </a>
           <a
-            href="mailto:research@example.com"
+            href="mailto:hardikrunwal123@gmail.com"
             style={{ color: "var(--muted-foreground)", textDecoration: "none", transition: "color 0.2s" }}
             onMouseEnter={(e) => e.currentTarget.style.color = "var(--foreground)"}
             onMouseLeave={(e) => e.currentTarget.style.color = "var(--muted-foreground)"}
