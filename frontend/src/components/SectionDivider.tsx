@@ -1,7 +1,7 @@
 export function SectionDivider({
   width = 48,
   color = "rgba(137, 137, 137, 0.4)",
-  margin = "64px 0"
+  margin = "24px 0"
 }) {
   return (
     <div
